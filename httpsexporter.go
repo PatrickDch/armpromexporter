@@ -18,7 +18,7 @@ import (
 )
 
 func Secret(user, realm string) string {
-	if user == "metrics" {
+	if user == "%USER%" {
 		// password is "hello"
 		return "%BASEAUTH%"
 	}
